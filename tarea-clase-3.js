@@ -67,3 +67,4 @@ let edadUsuario = prompt('¿cuál es tu edad?')
 if (edadUsuario > 17)
     alert('podes pasar')
 else alert('no podes pasar')
+
