@@ -24,17 +24,17 @@
 
 
 
-let preguntarNombre = (prompt('¿cuál es tu nombre?') || '').toLocaleLowerCase().trim();
+let preguntarNombre = (prompt('¿cuál es tu nombre?') || '').trim();
 const MY_NAME = 'pablo';
 
 
-if (preguntarNombre === MY_NAME){
+if (preguntarNombre.toLocaleLowerCase() === MY_NAME){
     console.log('Hola Tocayo! yo también me llamo Pablo')
 }
 else if(preguntarNombre == 'sol'){
     console.log('hola ' + preguntarNombre + ' te llamas igual que el Sol')
 }
-else if(preguntarNombre.length === 0){
+else if(preguntarNombre.trim().length === 0){
     console.log('No ingresaste ningún nombre')
 }
 else{
