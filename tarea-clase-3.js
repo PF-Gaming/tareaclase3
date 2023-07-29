@@ -24,11 +24,11 @@
 
 
 
-let preguntarNombre = (prompt('¿cuál es tu nombre?') || '').toLocaleLowerCase().trim();
+let preguntarNombre = (prompt('¿cuál es tu nombre?') || '').trim();
 const MY_NAME = 'pablo';
 
 
-if (preguntarNombre === MY_NAME){
+if (preguntarNombre.toLocaleLowerCase() === MY_NAME){
     console.log('Hola Tocayo! yo también me llamo Pablo')
 }
 else if(preguntarNombre == 'sol'){
@@ -41,10 +41,10 @@ else{
     console.log('hola ' + preguntarNombre)
 };
 
-/*let miEdad = 37
+const MY_AGE = 37
 let edadUsuario = prompt('¿cuál es tu edad?');
 
-f (edadUsuario == 37){
+if (edadUsuario == 37){
     alert('Tenemos la misma edad')}
 else if(edadUsuario > 37){
     alert('sos mayor que yo')
@@ -52,7 +52,7 @@ else if(edadUsuario > 37){
 else{
      alert('sos menor que yo')
 };
-*/
+
 
 let preguntarPorDocumento = prompt('¿Tenés documento?');
 if(preguntarPorDocumento == 'no')
