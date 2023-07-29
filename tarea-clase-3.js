@@ -20,7 +20,6 @@
 // Si no entendemos la respuesta, le decimos que no entendimos la respuesta.
 // Punto bonus: SI, NO, Si, No, si, no.
 
-//Tarea 1
 
 
 
@@ -41,6 +40,7 @@ else{
     console.log('hola ' + preguntarNombre)
 };
 
+<<<<<<< Updated upstream
 /*let miEdad = 37
 let edadUsuario = prompt('¿cuál es tu edad?');
 
@@ -51,20 +51,48 @@ else if(edadUsuario > 37){
 }
 else{
      alert('sos menor que yo')
+=======
+const MY_AGE = 37
+const edadUsuario = Number(prompt('¿cuál es tu edad?'));
+
+if(edadUsuario === 0){
+    alert('Ingresá un número entero mayor a 0');
+}else if(edadUsuario === 37){
+    alert('Tenemos la misma edad');
+}else if(edadUsuario > 37){
+    alert('Sos mayor que yo');
+}else if(edadUsuario < 37){
+    alert('Sos menor que yo')    
+}else{
+     alert('No entendí la respuesta. Ingresá un número entero mayor a 0')
+>>>>>>> Stashed changes
 };
 */
 
-let preguntarPorDocumento = prompt('¿Tenés documento?');
-if(preguntarPorDocumento == 'no')
-    alert('Sin documento no podes pasar')
-if(preguntarPorDocumento !== 'si')
-    alert('No entendi la respuesta, responder si o no')
-if(preguntarPorDocumento == 'si')
-{ 
-let edadUsuario = prompt('¿cuál es tu edad?')
-};
 
+const EDAD_PARA_ENTRAR = 18;
+const RESPUESTA_SI = 'si';
+const RESPUESTA_NO = 'no';
+
+
+let preguntarPorDocumento = (prompt('¿Tenés documento?') || '').toLocaleLowerCase();
+
+if(preguntarPorDocumento === RESPUESTA_NO){
+    alert('Sin documento no podes pasar');
+}else if(preguntarPorDocumento !== RESPUESTA_SI){
+    alert('No entendi la respuesta, responder si o no')
+}
+
+<<<<<<< Updated upstream
 if (edadUsuario > 17)
     alert('podes pasar')
 else alert('no podes pasar')
 
+=======
+if (preguntarPorDocumento === RESPUESTA_SI) {
+    const preguntarEdad = Number(prompt('¿cuál es tu edad?'));
+
+    if (preguntarEdad > 17){
+    alert('Podes pasar');}
+else alert('No podes pasar')}
+>>>>>>> Stashed changes
