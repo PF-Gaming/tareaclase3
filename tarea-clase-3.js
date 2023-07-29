@@ -34,17 +34,17 @@ if (preguntarNombre.toLocaleLowerCase() === MY_NAME){
 else if(preguntarNombre == 'sol'){
     console.log('hola ' + preguntarNombre + ' te llamas igual que el Sol')
 }
-else if(preguntarNombre.trim().length === 0){
+else if(preguntarNombre.length === 0){
     console.log('No ingresaste ningún nombre')
 }
 else{
     console.log('hola ' + preguntarNombre)
 };
 
-/*let miEdad = 37
+const MY_AGE = 37
 let edadUsuario = prompt('¿cuál es tu edad?');
 
-f (edadUsuario == 37){
+if (edadUsuario == 37){
     alert('Tenemos la misma edad')}
 else if(edadUsuario > 37){
     alert('sos mayor que yo')
@@ -52,7 +52,7 @@ else if(edadUsuario > 37){
 else{
      alert('sos menor que yo')
 };
-*/
+
 
 let preguntarPorDocumento = prompt('¿Tenés documento?');
 if(preguntarPorDocumento == 'no')
