@@ -28,7 +28,7 @@ const MI_NOMBRE = 'pablo';
 
 
 if (nombreUsuario === MI_NOMBRE){
-    console.log('Hola Tocayo! yo también me llamo Pablo')
+    console.log('Hola tocayo! yo también me llamo Pablo')
 }
 else if(nombreUsuario === 'sol'){
     console.log('hola ' + nombreUsuario + ' te llamas igual que el Sol')
@@ -37,7 +37,7 @@ else if(nombreUsuario.length === 0){
     console.log('No ingresaste ningún nombre')
 }
 else{
-    console.log('hola ' + nombreUsuario)
+    console.log('hola ' + nombreUsuario[0].toUpperCase() + nombreUsuario.substring(1))
 };
 
 //Solución 2
@@ -70,7 +70,6 @@ let usuarioConDocumento = (prompt('¿Tenés documento?') || '').toLocaleLowerCas
 if(usuarioConDocumento = RESPUESTA_SI_TILDADA){
     usuarioConDocumento = RESPUESTA_SI
 }
-
 
 if(usuarioConDocumento === RESPUESTA_NO){
     alert('Sin documento no podes pasar');
