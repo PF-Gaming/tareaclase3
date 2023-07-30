@@ -22,12 +22,12 @@
 
 
 
-
+//Solución 1
 let preguntarNombre = (prompt('¿cuál es tu nombre?') || '').toLocaleLowerCase().trim();
-const MY_NAME = 'pablo';
+const MI_NOMBRE = 'pablo';
 
 
-if (preguntarNombre === MY_NAME){
+if (preguntarNombre === MI_NOMBRE){
     console.log('Hola Tocayo! yo también me llamo Pablo')
 }
 else if(preguntarNombre == 'sol'){
@@ -40,36 +40,24 @@ else{
     console.log('hola ' + preguntarNombre)
 };
 
-<<<<<<< Updated upstream
-/*let miEdad = 37
-let edadUsuario = prompt('¿cuál es tu edad?');
+//Solución 2
+const MI_EDAD = 37
+const EDAD_USUARIO = Number(prompt('¿cuál es tu edad?'));
 
-f (edadUsuario == 37){
-    alert('Tenemos la misma edad')}
-else if(edadUsuario > 37){
-    alert('sos mayor que yo')
-}
-else{
-     alert('sos menor que yo')
-=======
-const MY_AGE = 37
-const edadUsuario = Number(prompt('¿cuál es tu edad?'));
-
-if(edadUsuario === 0){
+if(EDAD_USUARIO === 0){
     alert('Ingresá un número entero mayor a 0');
-}else if(edadUsuario === 37){
+}else if(EDAD_USUARIO === 37){
     alert('Tenemos la misma edad');
-}else if(edadUsuario > 37){
+}else if(EDAD_USUARIO > 37){
     alert('Sos mayor que yo');
-}else if(edadUsuario < 37){
+}else if(EDAD_USUARIO < 37){
     alert('Sos menor que yo')    
 }else{
      alert('No entendí la respuesta. Ingresá un número entero mayor a 0')
->>>>>>> Stashed changes
 };
-*/
 
 
+/*
 const EDAD_PARA_ENTRAR = 18;
 const RESPUESTA_SI = 'si';
 const RESPUESTA_NO = 'no';
@@ -84,7 +72,7 @@ if(preguntarPorDocumento === RESPUESTA_NO){
 }
 
 <<<<<<< Updated upstream
-if (edadUsuario > 17)
+if (EDAD_USUARIO > 17)
     alert('podes pasar')
 else alert('no podes pasar')
 
@@ -96,3 +84,4 @@ if (preguntarPorDocumento === RESPUESTA_SI) {
     alert('Podes pasar');}
 else alert('No podes pasar')}
 >>>>>>> Stashed changes
+*/
