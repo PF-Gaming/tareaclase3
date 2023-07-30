@@ -23,21 +23,21 @@
 
 
 //Solución 1
-let preguntarNombre = (prompt('¿cuál es tu nombre?') || '').toLocaleLowerCase().trim();
+let nombreUsuario = (prompt('¿cuál es tu nombre?') || '').toLocaleLowerCase().trim();
 const MI_NOMBRE = 'pablo';
 
 
-if (preguntarNombre === MI_NOMBRE){
+if (nombreUsuario === MI_NOMBRE){
     console.log('Hola Tocayo! yo también me llamo Pablo')
 }
-else if(preguntarNombre == 'sol'){
-    console.log('hola ' + preguntarNombre + ' te llamas igual que el Sol')
+else if(nombreUsuario === 'sol'){
+    console.log('hola ' + nombreUsuario + ' te llamas igual que el Sol')
 }
-else if(preguntarNombre.length === 0){
+else if(nombreUsuario.length === 0){
     console.log('No ingresaste ningún nombre')
 }
 else{
-    console.log('hola ' + preguntarNombre)
+    console.log('hola ' + nombreUsuario)
 };
 
 //Solución 2
@@ -46,18 +46,18 @@ const EDAD_USUARIO = Number(prompt('¿cuál es tu edad?'));
 
 if(EDAD_USUARIO === 0){
     alert('Ingresá un número entero mayor a 0');
-}else if(EDAD_USUARIO === 37){
+}else if(EDAD_USUARIO === MI_EDAD){
     alert('Tenemos la misma edad');
-}else if(EDAD_USUARIO > 37){
+}else if(EDAD_USUARIO > MI_EDAD){
     alert('Sos mayor que yo');
-}else if(EDAD_USUARIO < 37){
+}else if(EDAD_USUARIO < MI_EDAD){
     alert('Sos menor que yo')    
 }else{
      alert('No entendí la respuesta. Ingresá un número entero mayor a 0')
 };
 
 
-/*
+
 const EDAD_PARA_ENTRAR = 18;
 const RESPUESTA_SI = 'si';
 const RESPUESTA_NO = 'no';
@@ -71,17 +71,7 @@ if(preguntarPorDocumento === RESPUESTA_NO){
     alert('No entendi la respuesta, responder si o no')
 }
 
-<<<<<<< Updated upstream
-if (EDAD_USUARIO > 17)
+if (EDAD_USUARIO > EDAD_PARA_ENTRAR)
     alert('podes pasar')
 else alert('no podes pasar')
 
-=======
-if (preguntarPorDocumento === RESPUESTA_SI) {
-    const preguntarEdad = Number(prompt('¿cuál es tu edad?'));
-
-    if (preguntarEdad > 17){
-    alert('Podes pasar');}
-else alert('No podes pasar')}
->>>>>>> Stashed changes
-*/
