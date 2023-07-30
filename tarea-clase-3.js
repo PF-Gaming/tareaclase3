@@ -57,22 +57,22 @@ if(EDAD_USUARIO === 0){
 };
 
 
-
+//Solución 3
 const EDAD_PARA_ENTRAR = 18;
 const RESPUESTA_SI = 'si';
 const RESPUESTA_NO = 'no';
 
 
-let preguntarPorDocumento = (prompt('¿Tenés documento?') || '').toLocaleLowerCase();
+let usuarioConDocumento = (prompt('¿Tenés documento?') || '').toLocaleLowerCase();
 
-if(preguntarPorDocumento === RESPUESTA_NO){
+if(usuarioConDocumento === RESPUESTA_NO){
     alert('Sin documento no podes pasar');
     
-}else if(preguntarPorDocumento !== RESPUESTA_SI){
+}else if(usuarioConDocumento !== RESPUESTA_SI){
     alert('No entendi la respuesta, responder si o no')
 }
 
-if (EDAD_USUARIO > EDAD_PARA_ENTRAR && RESPUESTA_SI === false)
+if (EDAD_USUARIO >= EDAD_PARA_ENTRAR && usuarioConDocumento === RESPUESTA_SI)
     alert('Podes pasar')
 else alert('No podes pasar')
 
