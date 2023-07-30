@@ -67,11 +67,12 @@ let preguntarPorDocumento = (prompt('¿Tenés documento?') || '').toLocaleLowerC
 
 if(preguntarPorDocumento === RESPUESTA_NO){
     alert('Sin documento no podes pasar');
+    
 }else if(preguntarPorDocumento !== RESPUESTA_SI){
     alert('No entendi la respuesta, responder si o no')
 }
 
-if (EDAD_USUARIO > EDAD_PARA_ENTRAR)
-    alert('podes pasar')
-else alert('no podes pasar')
+if (EDAD_USUARIO > EDAD_PARA_ENTRAR && RESPUESTA_SI === false)
+    alert('Podes pasar')
+else alert('No podes pasar')
 
