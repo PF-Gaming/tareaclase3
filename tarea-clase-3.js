@@ -59,11 +59,18 @@ if(EDAD_USUARIO === 0){
 
 //Solución 3
 const EDAD_PARA_ENTRAR = 18;
-const RESPUESTA_SI = 'si';
+const RESPUESTA_SI = 'sí';
+const RESPUESTA_SI_TILDADA = 'sí'
 const RESPUESTA_NO = 'no';
 
 
+
 let usuarioConDocumento = (prompt('¿Tenés documento?') || '').toLocaleLowerCase();
+
+if(usuarioConDocumento = RESPUESTA_SI_TILDADA){
+    usuarioConDocumento = RESPUESTA_SI
+}
+
 
 if(usuarioConDocumento === RESPUESTA_NO){
     alert('Sin documento no podes pasar');
