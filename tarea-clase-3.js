@@ -30,8 +30,8 @@ const MI_NOMBRE = 'pablo';
 if (nombreUsuario === MI_NOMBRE){
     console.log('Hola tocayo! yo también me llamo Pablo')
 }
-else if(nombreUsuario === 'sol'){
-    console.log('hola ' + nombreUsuario + ' te llamas igual que el Sol')
+else if(nombreUsuario === 'laura'){
+    console.log('hola ' + nombreUsuario + ' te llamas igual que mi hermana')
 }
 else if(nombreUsuario.length === 0){
     console.log('No ingresaste ningún nombre')
